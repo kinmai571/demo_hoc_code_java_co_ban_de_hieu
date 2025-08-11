@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Học Code Java Cơ Bản</title>
+    <meta
+      name="description"
+      content="Trang web hướng dẫn học code Java cơ bản: lộ trình, bài học, bài tập thực hành, tài nguyên và mẹo học hiệu quả."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Trang chủ">Java101</a>
+        <button id="navToggle" class="nav-toggle" aria-label="Mở menu">☰</button>
+        <nav id="mainNav" class="nav">
+          <a href="#lo-trinh">Lộ trình</a>
+          <a href="#bai-hoc">Bài học</a>
+          <a href="#bai-tap">Bài tập</a>
+          <a href="#tai-nguyen">Tài nguyên</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Học Code Java Cơ Bản, Từng Bước Vững Chắc</h1>
+            <p>
+              Một lộ trình học Java dành cho người mới bắt đầu: dễ hiểu, súc tích
+              và có bài tập thực hành. Bắt đầu từ cài đặt môi trường đến OOP và
+              làm mini project.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#bai-hoc">Bắt đầu học</a>
+              <a class="btn btn-ghost" href="#lo-trinh">Xem lộ trình</a>
+            </div>
+          </div>
+          <div class="hero-card" role="img" aria-label="Sơ đồ lộ trình Java">
+            <ol>
+              <li>Cài đặt JDK & IDE</li>
+              <li>Hello World</li>
+              <li>Biến, kiểu dữ liệu, toán tử</li>
+              <li>Điều kiện & vòng lặp</li>
+              <li>Mảng & phương thức</li>
+              <li>OOP: lớp, đối tượng, kế thừa, interface</li>
+              <li>Ngoại lệ, Collections, I/O</li>
+              <li>Mini Project</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lộ trình -->
+      <section id="lo-trinh" class="section">
+        <div class="container">
+          <h2>Lộ trình học</h2>
+          <div class="grid grid-3">
+            <article class="card">
+              <h3>1. Chuẩn bị môi trường</h3>
+              <p>
+                Cài đặt <strong>JDK 17+</strong> và một IDE như IntelliJ IDEA hoặc
+                VS Code (Java Extension Pack). Thiết lập biến môi trường
+                <code>JAVA_HOME</code> và kiểm tra <code>java -version</code>.
+              </p>
+            </article>
+            <article class="card">
+              <h3>2. Cơ bản ngôn ngữ</h3>
+              <p>
+                Làm quen cú pháp: biến, kiểu dữ liệu, toán tử, nhập/xuất, điều
+                kiện (<code>if/else</code>), vòng lặp (<code>for/while</code>),
+                mảng và phương thức.
+              </p>
+            </article>
+            <article class="card">
+              <h3>3. Hướng đối tượng</h3>
+              <p>
+                Hiểu lớp, đối tượng, tính đóng gói, kế thừa, đa hình, interface
+                và trừu tượng. Viết mã sạch, đặt tên có ý nghĩa.
+              </p>
+            </article>
+            <article class="card">
+              <h3>4. Xử lý ngoại lệ & Collections</h3>
+              <p>
+                Sử dụng <code>try/catch</code>, ném ngoại lệ, các cấu trúc
+                <code>List</code>, <code>Set</code>, <code>Map</code> và duyệt dữ
+                liệu hiệu quả.
+              </p>
+            </article>
+            <article class="card">
+              <h3>5. I/O & Thực hành</h3>
+              <p>
+                Đọc/ghi file cơ bản, tổ chức project, viết test đơn giản, làm
+                mini project để tổng hợp kiến thức.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bài học -->
+      <section id="bai-hoc" class="section alt">
+        <div class="container">
+          <h2>Bài học nhanh</h2>
+          <div class="lessons">
+            <details open>
+              <summary>1) Hello World</summary>
+              <pre><code class="language-java">public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello, Java!");
+  }
+}
+</code></pre>
+              <ul class="tips">
+                <li><strong>class</strong>: khuôn mẫu tạo đối tượng</li>
+                <li><strong>main</strong>: điểm vào chương trình</li>
+                <li><strong>System.out.println</strong>: in ra màn hình</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>2) Biến & Kiểu dữ liệu</summary>
+              <pre><code class="language-java">int age = 20;          // số nguyên
+double pi = 3.14;     // số thực
+boolean valid = true; // logic
+char grade = 'A';     // ký tự
+String name = "An";   // chuỗi
+</code></pre>
+              <p class="note">Đặt tên biến rõ nghĩa, dùng camelCase.</p>
+            </details>
+
+            <details>
+              <summary>3) Điều kiện & Vòng lặp</summary>
+              <pre><code class="language-java">int score = 75;
+if (score &gt;= 90) {
+  System.out.println("A");
+} else if (score &gt;= 80) {
+  System.out.println("B");
+} else {
+  System.out.println("C hoặc thấp hơn");
+}
+
+for (int i = 0; i &lt; 3; i++) {
+  System.out.println(i);
+}
+</code></pre>
+            </details>
+
+            <details>
+              <summary>4) Mảng & Phương thức</summary>
+              <pre><code class="language-java">int[] arr = {1, 2, 3};
+for (int x : arr) {
+  System.out.println(x);
+}
+
+static int add(int a, int b) {
+  return a + b;
+}
+// Gọi: int c = add(2, 3);
+</code></pre>
+            </details>
+
+            <details>
+              <summary>5) OOP cơ bản</summary>
+              <pre><code class="language-java">class Person {
+  private String name;
+
+  public Person(String name) {
+    this.name = name;
+  }
+
+  public String getName() {
+    return name;
+  }
+}
+
+class Student extends Person {
+  private int id;
+
+  public Student(String name, int id) {
+    super(name);
+    this.id = id;
+  }
+}
+// Interface
+interface Printable { void print(); }
+// implements Printable ...
+</code></pre>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bài tập -->
+      <section id="bai-tap" class="section">
+        <div class="container">
+          <h2>Bài tập thực hành</h2>
+          <ol class="ex-list">
+            <li>
+              Viết chương trình nhập vào một số nguyên n và in ra tổng
+              1 + 2 + ... + n.
+            </li>
+            <li>
+              Viết phương thức kiểm tra số nguyên tố. Dùng trong chương trình
+              để in các số nguyên tố nhỏ hơn 100.
+            </li>
+            <li>
+              Tạo lớp <code>Book</code> gồm <code>title</code>, <code>author</code>,
+              <code>price</code>; viết getter/setter và hàm in thông tin.
+            </li>
+          </ol>
+          <details>
+            <summary>Gợi ý lời giải (mở khi cần)</summary>
+            <pre><code class="language-java">// 1) Tổng 1..n
+int sum = 0;
+for (int i = 1; i &lt;= n; i++) sum += i;
+
+// 2) Kiểm tra số nguyên tố
+static boolean isPrime(int x) {
+  if (x &lt; 2) return false;
+  for (int i = 2; i * i &lt;= x; i++) if (x % i == 0) return false;
+  return true;
+}
+for (int i = 2; i &lt; 100; i++) if (isPrime(i)) System.out.print(i + " ");
+</code></pre>
+          </details>
+        </div>
+      </section>
+
+      <!-- Tài nguyên -->
+      <section id="tai-nguyen" class="section alt">
+        <div class="container">
+          <h2>Tài nguyên hữu ích</h2>
+          <ul class="resource-list">
+            <li>
+              Tải JDK: <a href="https://adoptium.net" target="_blank" rel="noopener">Adoptium</a>
+            </li>
+            <li>
+              IDE: <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener">IntelliJ IDEA</a>,
+              <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VS Code</a>
+            </li>
+            <li>
+              Tài liệu chính thức: <a href="https://docs.oracle.com/javase/specs/" target="_blank" rel="noopener">Java SE Docs</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="section">
+        <div class="container">
+          <div class="newsletter">
+            <h3>Nhận lộ trình và tài liệu qua email</h3>
+            <form id="newsletterForm">
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="email@domain.com"
+                aria-label="Email"
+                required
+              />
+              <button type="submit" class="btn btn-primary">Đăng ký</button>
+              <p id="newsletterMsg" class="msg" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Java101. Made with love for beginners.</p>
+        <a class="repo" href="https://github.com/kinmai571/demo_hoc_code_java_co_ban_de_hieu" target="_blank" rel="noopener">Git Repo</a>
+      </div>
+    </footer>
+
+    <script src="assets/script.js" defer></script>
+  </body>
+  </html>
+
+

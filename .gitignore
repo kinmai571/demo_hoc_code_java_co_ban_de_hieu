@@ -1,0 +1,10 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.env
+
+# Build output (if any in future)
+dist/
+build/
